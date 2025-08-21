@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredericka the Great', system-ui;
+    transition: 0.5s ease-in-out;
+
+}
+
+body{
+    background: linear-gradient(#001a21,#034b5a);
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0;
+    width: 100vw;
+    min-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    color: white;
+    margin-top:150px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.heading{
+    font-size: 30px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    margin-top: 50px;
+}
+
+.input-area{
+    width: 70%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-area form input{
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #04546e;
+    color: #ffffff;
+}
+
+.input-area form button{
+    background-color: #002837;
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+
+}
+
+.todo-tasks{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+   
+ 
+}
+
+.task{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    justify-content: left;
+    background-color: #01394c;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: 1px 4px 8px rgba(8, 8, 8, 0.596);
+}
+.decisions{
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+.decisions i{
+    margin-right: 15px;
+    padding: 9px;
+    background-color: #002837;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.task-detail{
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.dateTime{
+    margin-top: 20px;
+    color: white;
+    word-spacing: 10px;
+    font-size: 25px;
+}
+.task {
+  transition: all 0.5s ease;
+}
+
+.todo-tasks {
+  transition: all 0.5s ease;
+}
+@media (max-width : 600px){
+    .todo-tasks{
+        width: 96%;
+    }
+
+    .input-area{
+        width: 99%;
+    }
+    .container{
+        width: 99%;
+    }
+
+    .task {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #01394c;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px rgb(8, 8, 8);
+    }
+
+    .decisions {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    }
+
+    .decisions i{
+        margin: 20px 20px 0px 0px ;
+    }
+
+    .task-detail {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        align-items: start;
+        text-transform: capitalize;
+        margin-top: 20px;
+    }
+
+    .heading{
+        font-size: 20px;
+    }
+}
